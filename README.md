@@ -1,4 +1,6 @@
-# Film Angels
+# Film Angels  
+
+## World's first professional angel investor organization for independent film  
 
 Film Angels is the world's first angel investor group dedicated to funding independent films.  It connects the most promising new movie ventures with the most suitable individual investors, aka angels.  Modeled after leading angel networks, Film Angels has been discreetly active in Silicon Valley and beyond for over fifteen years.  Members of its local chapters in San Francisco, Palo Alto–Mountain View–San Jose, Los Angeles, New York City, and London have invested in dozens of productions.  
 
@@ -30,3 +32,5 @@ sergio@filmangels.com
 [^1]: The founding team also comprises a diverse group of influential Silicon Valley professionals from a variety of backgrounds such as early-stage investing, corporate law, real estate, software development, and internet startups.  
 [^2]: Creative control counts as a precious commodity in high demand among the world's great filmmakers.  
 [^3]: Under the federal securities laws, a company that offers or sells its securities must register the securities with the SEC or find an exemption from the registration requirements.  The federal securities laws provide companies with a number of exemptions.  For some of the exemptions, such as Rule 506 of Regulation D, a company may sell its securities to what are known as accredited investors.  The term accredited investor is defined in Rule 501 of Regulation D.  
+
+<!-- 202311031451 -->
