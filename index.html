@@ -1,54 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Film Angels: funding film the Silicon Valley way (since 2005)</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="favicon.ico?v=9">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-	
-body {
-  background-image: url("motto.png"), url("logomark.png"), url("hollywood.jpg");
-  background-position: 64.85% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  font-family: Georgia, Garamond, serif;
-}
-
-a {
-  text-decoration: none;
-  color: gray;
-  font-size: 1rem;
-}
-
-.logotype {
-  position: absolute;
-  top: 5vmin;
-  left: 5vmin;
-  width: 30vmin;
-}
-
-.contact {
-  position: absolute;
-  bottom: 16px;
-  right: 32px;
-}
-</style>
-</head>
-<body>
-
-<a title="about us" href="about.pdf">
-  <img class="logotype" src="logotype.png" alt="Film Angels">
-</a>
-
-<div class="contact">
-  <a title="contact us" href="mailto:hello@filmangels.com">hello@filmangels.com</a>
-</div>
-
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Film Angels" />
+        <meta name="author" content="Film Angels" />
+        <title>Film Angels: funding film the Silicon Valley way (since 2005)</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/disclosure.css" rel="stylesheet" />
+        <style>
+            /* https://stackoverflow.com/questions/1575141/how-to-make-a-div-100-height-of-the-browser-window */
+            body > header, header.masthead {
+                height: 100%;
+                min-height: 100vh;
+            }
+            header.masthead {
+                background-image: url("assets/img/motto.png"), url("assets/img/logomark.png"), url("assets/img/hollywood.jpg");
+                background-position: 64.85% 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            ._logotype {
+                position: absolute;
+                top: 0.75rem;
+                width: 5.3rem;
+            }
+            /* https://www.w3docs.com/snippets/css/how-to-align-the-content-of-a-div-to-the-bottom.html */
+            #_bottom {
+                position: absolute;
+                bottom: 0;
+            }
+            ._alternate {
+                background-color: var(--bs-gray-dark);
+            }
+            section {
+                color: rgba(255, 255, 255, 0.75);
+            }
+            section h2, section:hover {
+                color: rgba(255, 255, 255, 0.95);
+            }
+            section a {
+                outline-color: transparent;
+                background-color: transparent;
+                text-underline-offset: 0.15em;
+            }
+            section a:link {
+                color: inherit;
+            }
+            /* needs work */
+            section a:visited {
+                color: rgba(255, 255, 255, 0.55);
+            }
+            /* needs work */
+            section:hover a:visited {
+                color: rgba(255, 255, 255, 0.65);
+            }
+            section a:focus {
+                text-decoration: none;
+            }
+            section a:hover {
+                /* text-decoration: underline; */
+            }			
+            section a:active {
+                color: #ffd700;
+            }
+            @font-face {
+                font-family: 'Hinge Font Familt Regular';
+                font-style: normal;
+                font-weight: normal;
+                src: local('Hinge Font Familt Regular'), url('assets/font/Hinge.woff') format('woff');
+            }
+            ._hinge {
+                font-family:'Hinge Font Familt Regular';
+            }
+            ._hinge span {
+                color: #ffd700;
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <!-- to do: https://stackoverflow.com/questions/14730484/add-a-link-to-an-image-in-a-css-style-sheet -->
+                <a class="navbar-brand" href="#page-top"><img class="_logotype" src="assets/img/logotype.png" alt="Film Angels"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#_about">About</a></li>
+                        <!-- 
+                        <li class="nav-item"><a class="nav-link" href="#_investors">Investors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#_producers">Producers</a></li>
+                        -->
+                        <li class="nav-item"><a class="nav-link" href="#_partners">Partners</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mailto:hello@filmangels.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content" id="_bottom">
+                <div class="container px-5">
+                    <!-- https://stackoverflow.com/questions/3239202/whats-the-correct-way-to-hide-the-h1-tag-and-not-be-banned-from-google -->
+                    <!-- 
+                    <h1 class="masthead-heading mb-0">Film Angels</h1>
+                    <h2 class="masthead-subheading mb-0">Funding film the Silicon Valley way</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+                    -->
+                </div>
+            </div>
+            <!-- 
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+            -->
+        </header>
+        <!-- Content topic 1-->
+        <article id="_about" title="About">
+            <header id="scroll">
+                <!-- 
+                <h1>About Film Angels</h1>
+                -->
+            </header>
+            <!-- Content section 1-->
+            <section id="_premier" title="Angel group for film">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/01.jpg" alt="Green Book" /></div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="p-5">
+                                <h2 class="display-6 _hinge">World's premier <span>angel group for film</span></h2>
+                                <p class="_expandable">Film Angels is the world's first and foremost professional angel investor organization dedicated to funding independent film projects. We connect the most promising new movie ventures with the most suitable individual investors, aka angels. Modeled after leading angel networks, Film Angels has been discreetly active in Silicon Valley and beyond for over fifteen years. Members of our <details><summary>local chapters</summary><span> in San Francisco, Palo Alto–Mountain View–San Jose, Los Angeles, New York City, and London</span></details> have invested in dozens of productions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Content section 2-->
+            <section id="_way" title="Silicon Valley way">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/02.jpg" alt="Googleplex" /></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <h2 class="display-6 _hinge">Funding film <span>the Silicon Valley way</span></h2>
+                                <p class="_expandable">Wall Street investment banker–turned–entrepreneur <details><summary>Thomas Trenker</summary><span>, a first-generation immigrant from Austria by way of Switzerland,</span></details> founded Film Angels in his <details><summary>twenties</summary><span> after helping found or fund multiple startups</span></details>. Sand Hill Road venture capitalist <details><summary>Saad Khan</summary><span> of Guy Kawasaki's Garage Technology Ventures</span></details> joined as his <details><summary>cofounder</summary><span> after hearing Thomas speak at Stanford business school's Future of Entertainment <details><summary>conference</summary><span>, where he challenged top studio executives to rethink film finance</span></details></span></details>. The founding team also comprises a diverse group of influential Silicon Valley <details><summary>professionals</summary><span> from a variety of backgrounds such as early-stage investing, corporate law, real estate, software development, and internet startups</span></details>.</p>
+                                <p class="_expandable">Film Angels has since grown into a go-to resource for Hollywood <details><summary>A-listers</summary><span>, Oscar winners and nominees, industry greats, and rising stars</span></details> looking to fund their independent films or personal projects outside the studio system. Typically, they pursue <details><summary>creative control</summary><span>, which counts as a precious commodity in high demand among the world's top filmmakers</span></details>.</p>
+                                <p>Statistical analysis reveals $5-10 million budgets as the sweet spot of successful film investment. They allow for first-rate, Academy Award–winning production values without precluding superior risk-adjusted ROIs. Win-wins become not only possible but increasingly likely.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Content section 3-->
+            <section id="_boldly" title="Boldly go">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/03.jpg" alt="Bottle Shock" /></div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="p-5">
+                                <h2 class="display-6 _hinge"><span>Boldly go</span> where others fear to tread</h2>
+                                <p class="_expandable">The venerable Wall Street Journal wrote about Film Angels' success on its blog and in the newspaper's business section, as did other <details><summary>major publications</summary><span> (e.g., San Jose Mercury News, San Francisco Chronicle)</span></details>. Film Angels regularly features such luminaries as Apple founder <details><summary>Steve Wozniak</summary><span>, AOL CEO Barry Schuler, Movielink CEO Jim Ramo, California Film Commissioner Hilary Armstrong, San Francisco Film Commission Executive Director Stefanie Coyote,</span></details> and '90s pop sensation Lance Bass, to name a few. Internet giant Google even made its headquarters available exclusively to Film Angels for an unprecedented pitch extravaganza headlined by legendary rock icon Carlos Santana and billionaire venture capitalist Tim Draper.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Content section 4-->
+            <section id="_platform" title="Unrivaled platform">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/04.jpg" alt="Miss India America" /></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <h2 class="display-6 _hinge"><span>Unrivaled platform</span> for the best and brightest</h2>
+                                <p class="_expandable">With up to 1,000 potential investors in attendance at a time, Film Angels meetings have served as a powerful platform for the in-person pitches of many celebrated filmmakers and famous actors, including <details><summary>Lori Petty</summary><span> ("League of Their Own," "Point Break," "Tank Girl," "Poker House")</span></details>, <details><summary>Sean Astin</summary><span> ("Lord of the Rings," "Goonies," "Rudy")</span></details>, <details><summary>David Lynch</summary><span> ("Twin Peaks," "Dune," "Mulholland Dr.")</span></details>, <details><summary>Matt Smith</summary><span> ("Doctor Who," "Womb")</span></details>, <details><summary>Adrian Grenier</summary><span> ("Entourage," "Devil Wears Prada")</span></details>, <details><summary>Peter Krause</summary><span> ("Parenthood," "Six Feet Under," "Truman Show")</span></details>, <details><summary>Danny Glover</summary><span> ("Lethal Weapon 1-4," "Saw," "Color Purple," "2012," "Shooter")</span></details>, <details><summary>David Arquette</summary><span> ("Scream," "Cougar Town")</span></details>, <details><summary>Kristin Davis</summary><span> ("Sex and the City")</span></details>, <details><summary>Frank Darabont</summary><span> ("Shawshank Redemption," "Walking Dead," "Green Mile," "Mist," "Mary Shelley's Frankenstein")</span></details>, <details><summary>Ajay Naidu</summary><span> ("Office Space," "Pi," "Bad Santa")</span></details>, <details><summary>Ron Fricke</summary><span> ("Star Wars III," "Samsara," "Baraka")</span></details>, <details><summary>Barrie Osborne</summary><span> ("Matrix," "Lord of the Rings," "Great Gatsby")</span></details>, <details><summary>Eugene Roddenberry Jr.</summary><span> ("Star Trek," "Earth: Final Conflict")</span></details>, and <details><summary>Ralph Guggenheim</summary><span> ("Toy Story")</details>. We invite only accredited <details><summary>investors</summary><span> with an express interest in movies</span></details> to attend these private events and to participate in thoroughly vetted investment opportunities. (Under the federal <details><summary>securities laws,</summary><span> a company that offers or sells its securities must register the securities with the SEC or find an exemption from the registration requirements. The federal securities laws provide companies with a number of exemptions. For some of the exemptions, such as Rule 506 of Regulation D,</span></details> a company may sell its securities to what are known as <details><summary>accredited investors.</summary><span> The term accredited investor is defined in Rule 501 of Regulation D.</span></details>)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- Content topic 2-->
+        <article class="_alternate" id="_partners" title="Partners and sponsors">
+            <header id="">
+                <!-- 
+                <h1>Film Angels Partners and Sponsors</h1>
+                -->
+            </header>
+            <!-- Content section 5-->
+            <section id="_partners">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="p-5"><a href="https://getgreenlit.xyz" rel="noreferrer noopener" target="_blank"><img class="img-fluid rounded-circle" src="assets/img/05.jpg" alt="Greenlit" /></a></div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="p-5">
+                                <h2 class="display-6 _hinge"><span>Partners</span> in finance</h2>
+                                <p class="_expandable">We have partnered with <details><summary>Greenlit</summary><span>, a pioneering fintech startup in the motion picture industry,</span></details> to deliver frictionless online workflows for filmmakers and financiers alike. Greenlit revolutionizes film finance by simplifying complexities, making it invaluable to those seeking to bring creative visions to life.</p>
+                                <!-- https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable, https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/ -->
+                                <p class="_expandable"><a href="https://getgreenlit.xyz" rel="noreferrer noopener" target="_blank">Greenlit's innovative technology</a> was born out of the challenges the founders, Ian Grant and Bhargav Tarpara, faced producing independent films. Bhargav is an angel investor, advisor to startups, and software engineer with 8 years of hands-on experience, as well as a documentary producer. An actor, stuntman, producer, and Minorities in Film cofounder, Ian was part of the founding team at unicorn <details><summary>Squire Technologies</summary><span>, where he scaled sales and operations to over $1 billion in transactions</span></details>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Film Angels 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
