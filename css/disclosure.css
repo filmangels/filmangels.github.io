@@ -1,0 +1,20 @@
+/* https://shkspr.mobi/blog/2020/12/a-terrible-way-to-do-footnotes-in-html */
+details, summary, p._expandable {
+  display: inline;
+}
+/* https://stackoverflow.com/questions/33384318/how-to-use-nbsp-in-html5, https://developer.mozilla.org/en-US/docs/Web/CSS/white-space */
+details summary {
+  cursor: pointer;
+  white-space: pre-wrap !important;
+  text-decoration: underline dotted;
+  text-underline-offset: 0.2em;
+}
+details[open] {
+  display: contents;
+}
+details span {
+  color: rgba(255, 255, 255, 0.55);
+}
+section:hover details span {
+  color: rgba(255, 255, 255, 0.65);
+}
